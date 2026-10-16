@@ -23,6 +23,13 @@ Close the game. Replace the old setup EXE in the game folder with the latest one
 
 PvP01, Killhouse 3, Killhouse 4, and DM Map. Bright Sands comes with the required original game installation.
 
+## Console and debug camera
+
+Installer v8 adds the native local cheat manager and console for each player.
+Press **F10**, type `toggledebugcamera`, and press Enter. F10 closes the console;
+repeat the command to return to your player. Commands that require server
+authority still depend on the game's own permissions.
+
 ## Verify a download
 
 Each release includes `SHA256SUMS.txt`. In PowerShell, run:
