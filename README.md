@@ -23,9 +23,29 @@ Close the game. Replace the old setup EXE in the game folder with the latest one
 
 PvP01, Killhouse 3, Killhouse 4, and DM Map. Bright Sands comes with the required original game installation.
 
-## Console and debug camera
+## Included client tools
 
-Installer v8 adds the native local cheat manager and console for each player.
+The current v24 installer includes native replay recording and a separate replay
+viewer, the end-of-raid skip control, an Insurance **Claim All** button, and
+**Recent Purchases / Rebuy** at each trader. Rebuy remembers the purchased stack
+quantity. Its history is saved on the server separately for each account and
+trader, so switching computers does not reset it.
+
+### Record and watch a replay
+
+- **Ctrl+Shift+R:** start recording while in a multiplayer raid.
+- **Ctrl+Shift+S:** stop recording.
+- **Ctrl+Shift+P:** select a recording and open it in a separate viewer window.
+- In the viewer, **F5** plays/pauses and **F6** switches normal/slow motion.
+- **WASD + mouse** moves the viewer's free camera.
+
+Recordings are saved in `%LOCALAPPDATA%\Prospect\Saved\Demos` for a normal
+installation. The viewer currently has no rewind/seek control; reopen the take
+to start it again.
+
+### Console and debug camera
+
+The native local cheat manager and console are available for each player.
 Press **F10**, type `toggledebugcamera`, and press Enter. F10 closes the console;
 repeat the command to return to your player. Commands that require server
 authority still depend on the game's own permissions.
