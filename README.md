@@ -25,22 +25,31 @@ PvP01, Killhouse 3, Killhouse 4, and DM Map. Bright Sands comes with the require
 
 ## Included client tools
 
-The current v34 installer includes native replay recording and a separate replay
+The current v57 installer includes native replay recording and a separate replay
 viewer, the end-of-raid skip control, an Insurance **Claim All** button, and
 **Recent Purchases / Rebuy** at each trader. Rebuy remembers the purchased stack
 quantity. Its history is saved on the server separately for each account and
 trader, so switching computers does not reset it.
 
-### Karambit and weapon inspect
+### Cosmetics and weapon inspect
 
-Select **Karambit** in normal melee cosmetic customization. The installer includes
-its model, equip animation, horizontal resting pose, swings and sounds. Other
-updated players can see and hear the normal Karambit actions.
+Choose **Karambit** through normal melee cosmetic customization. Updated players
+can see its equip/resting pose and swings and hear its sounds. Press **K** to
+inspect a gun or knife, or change **Inspect Weapon** in Settings → Keybinds.
+Firing, reloading or switching weapons cancels the first-person inspect.
 
-Press **K** to inspect the equipped gun or knife. Change **Inspect Weapon** under
-**Settings → Keybinds** to use a different key. Firing, reloading or switching
-weapons cancels the inspect. These authored Season 3 inspect animations play in
-first person.
+### Loadout presets and free faction kits
+
+At Station, open **Tab → Inventory**. Use **Save as Preset** to save a kit into
+Preset A, B or C, then select its tab to preview or equip it. The game uses your
+stash first. **Purchase & Equip** lists missing trader items and their actual
+K-Mark total before confirmation; preset slots are free. Exact pieces that are
+not available from the traders are skipped. Presets are stored on your account
+on the server.
+
+This release also updates the original free faction kit selector before the
+insurance step and includes Station UI optimizations. The free-kit entry and
+remaining Station hitches are still being evaluated in real play.
 
 ### Record and watch a replay
 
@@ -72,6 +81,3 @@ Get-FileHash -Algorithm SHA256 -LiteralPath '.\ProspectMultiplayerSetup.exe'
 Compare the hash with the checksum from the same release. Matching hashes verify that the downloaded file matches the published installer.
 
 The setup EXE is hosted on GitHub Releases so the large download does not pass through the game host's home upload connection. The community website and game services remain at their existing addresses.
-
-Only the current installer assets are retained on GitHub. Superseded release notes
-and tags remain available; use the latest download link above.
