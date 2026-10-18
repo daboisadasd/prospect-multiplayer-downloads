@@ -25,7 +25,7 @@ PvP01, Killhouse 3, Killhouse 4, and DM Map. Bright Sands comes with the require
 
 ## Included client tools
 
-The current v57 installer includes native replay recording and a separate replay
+The current v58 installer includes native replay recording and a separate replay
 viewer, the end-of-raid skip control, an Insurance **Claim All** button, and
 **Recent Purchases / Rebuy** at each trader. Rebuy remembers the purchased stack
 quantity. Its history is saved on the server separately for each account and
@@ -38,7 +38,7 @@ can see its equip/resting pose and swings and hear its sounds. Press **K** to
 inspect a gun or knife, or change **Inspect Weapon** in Settings → Keybinds.
 Firing, reloading or switching weapons cancels the first-person inspect.
 
-### Loadout presets and free faction kits
+### Loadout presets
 
 At Station, open **Tab → Inventory**. Use **Save as Preset** to save a kit into
 Preset A, B or C, then select its tab to preview or equip it. The game uses your
@@ -47,9 +47,9 @@ K-Mark total before confirmation; preset slots are free. Exact pieces that are
 not available from the traders are skipped. Presets are stored on your account
 on the server.
 
-This release also updates the original free faction kit selector before the
-insurance step and includes Station UI optimizations. The free-kit entry and
-remaining Station hitches are still being evaluated in real play.
+Free loadouts have been removed. Deployment uses the original insurance screen
+without an added kit-selector overlay. This release retains the Station UI
+optimizations; remaining Station hitches are still being evaluated in real play.
 
 ### Record and watch a replay
 
