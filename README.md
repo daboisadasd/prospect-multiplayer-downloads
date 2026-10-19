@@ -1,23 +1,26 @@
 # Prospect Multiplayer downloads
 
-[**Download the latest Windows setup EXE**](https://github.com/daboisadasd/prospect-multiplayer-downloads/releases/latest/download/ProspectMultiplayerSetup.exe)
+[**Download the latest Windows launcher**](https://github.com/daboisadasd/prospect-multiplayer-downloads/releases/latest/download/ProspectMultiplayerLauncher.exe)
 
 [Full installation and upgrade guide](https://prospect.playit.plus/) · [All releases](https://github.com/daboisadasd/prospect-multiplayer-downloads/releases) · [Latest SHA256 checksum](https://github.com/daboisadasd/prospect-multiplayer-downloads/releases/latest/download/SHA256SUMS.txt)
 
-This repository distributes the Prospect Multiplayer client installer and public checksums. The full supported original Prospect game installation is required.
+This repository distributes the Prospect Multiplayer small client launcher, separate content files, and public checksums. The full supported original Prospect game installation is required.
 
-## Install and play
+## Install, update and play
 
-1. Close the game and keep Steam running.
-2. Put `ProspectMultiplayerSetup.exe` beside `Prospect-Win64-Shipping.exe`, normally in `Prospect\Binaries\Win64`. Supported copies using `Binaries\mp` should use that folder instead.
-3. Run setup once and wait for the installation confirmation.
-4. Launch with the generated **Play Prospect Multiplayer** shortcut. Keep the setup EXE in its installed location; you may copy the shortcut to your desktop.
+1. Close this game copy and keep Steam running.
+2. Download `ProspectMultiplayerLauncher.exe` and run it as your normal Windows user.
+3. Choose the supported ReCycle or Steam depot installation from its numbered list. It reads ReCycle's saved game directory; the game does not need to be inside the launcher folder. Putting it directly in `Prospect/Binaries/Win64` also selects that copy.
+4. **Enter** installs/updates; **P** updates and plays. Only changed components download. Our paks stay as separate normally named files in `Content/Paks`.
+5. To return to ReCycle or Singleplayer Cycle, close the game, run this launcher and choose **U**. It restores the original DLLs/settings and parked ReCycle paks/mods. Uninstall needs no internet.
 
-**Setup is an install/remove toggle.** After installation, running setup normally again removes multiplayer support. Use the Play shortcut to play.
+The launcher is about 0.6 MB. A fresh install downloads approximately 1.63 GiB once. Existing v86 assets are reused; this release adds Reyna's approximately 20 MB pak. Downloads resume after interruption.
 
-## Update an older installation
+Known singleplayer mod files are parked in `.ProspectUpdater` while our overlay is installed. **Keep that folder: it holds your originals.** Do not run another launcher against the same game copy until uninstalling multiplayer. Unknown external changes are preserved and stop the operation for review.
 
-Close the game. Replace the old setup EXE in the game folder with the latest one, run it once to remove the recognized old installation, then run it again to install the new version. Launch with **Play Prospect Multiplayer**.
+Options: `--play`, `--list`, `--check`, `--uninstall`, `--game-dir PATH`, `--help`.
+
+The old large setup EXE used an install/remove toggle. Stop using it while the new overlay is installed. Older setup backups remain untouched; uninstall restores the installation state captured when this launcher was first used. Game progress and saved recordings outside the install directory are not rolled back.
 
 ## Included maps
 
@@ -25,7 +28,7 @@ PvP01, Killhouse 3, Killhouse 4, and DM Map. Bright Sands comes with the require
 
 ## Included client tools
 
-The current v58 installer includes native replay recording and a separate replay
+The current launcher includes native replay recording and a separate replay
 viewer, the end-of-raid skip control, an Insurance **Claim All** button, and
 **Recent Purchases / Rebuy** at each trader. Rebuy remembers the purchased stack
 quantity. Its history is saved on the server separately for each account and
@@ -75,9 +78,9 @@ authority still depend on the game's own permissions.
 Each release includes `SHA256SUMS.txt`. In PowerShell, run:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath '.\ProspectMultiplayerSetup.exe'
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\ProspectMultiplayerLauncher.exe'
 ```
 
-Compare the hash with the checksum from the same release. Matching hashes verify that the downloaded file matches the published installer.
+Compare the hash with the checksum from the same release. Matching hashes verify that the downloaded file matches the published launcher.
 
-The setup EXE is hosted on GitHub Releases so the large download does not pass through the game host's home upload connection. The community website and game services remain at their existing addresses.
+The launcher and individual components are hosted on GitHub Releases. Signed update metadata and SHA256 protect component integrity; normal HTTPS checks remain enabled. No administrator access, custom certificate, antivirus exclusion or downloaded script is required. The initial EXE is not Authenticode signed; use the official download and checksum. No software can promise zero security issues. The community website and game services remain at their existing addresses.
